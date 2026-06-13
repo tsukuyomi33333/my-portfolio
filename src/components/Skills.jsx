@@ -4,24 +4,21 @@ function Skills() {
     "CSS",
     "JavaScript",
     "React",
-    "Node.js",
-    "Express.js",
-    "MongoDB",
     "Git",
     "GitHub",
+    "Node.js",
+    "MongoDB"
   ];
 
   return (
     <section id="skills">
       <h2>Skills</h2>
 
-      <div className="skills-container">
-        {skills.map((skill, index) => (
-          <span className="skill" key={index}>
-            {skill}
-          </span>
+      <ul>
+        {skills.map((skill,index) => (
+          <li key={index}>{skill}</li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
